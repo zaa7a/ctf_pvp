@@ -1,0 +1,177 @@
+<!-- public/index.html -->
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        AI CTF Observer
+    </title>
+
+    <link
+            rel="stylesheet"
+            href="style.css"
+    >
+
+</head>
+<body>
+
+<div id="topBar">
+
+    <div class="topItem">
+
+        <span class="label">
+            Turn
+        </span>
+
+        <span id="turnValue">
+            0
+        </span>
+
+    </div>
+
+    <div class="topItem">
+
+        <span class="label">
+            Phase
+        </span>
+
+        <span id="phaseValue">
+            ATTACKER
+        </span>
+
+    </div>
+
+    <div class="topItem">
+
+        <span class="label">
+            Winner
+        </span>
+
+        <span id="winnerValue">
+            NONE
+        </span>
+
+    </div>
+
+    <button id="refreshButton">
+        Refresh
+    </button>
+
+    <button id="resetButton">
+        Reset
+    </button>
+
+</div>
+
+<div id="mainLayout">
+
+    <div
+            class="panel"
+            id="leftPanel"
+    >
+
+        <h2>
+            AI Interaction
+        </h2>
+
+        <div class="section">
+
+            <h3>
+                AI Prompt
+            </h3>
+
+            <textarea
+                    id="promptBox"
+                    readonly
+            ></textarea>
+
+            <button id="copyPromptButton">
+                Copy Prompt
+            </button>
+
+        </div>
+
+        <div class="section">
+
+            <h3>
+                AI Response Input
+            </h3>
+
+            <textarea
+                    id="responseInput"
+                    placeholder='{
+  "thoughts": [],
+  "commands": []
+}'
+            ></textarea>
+
+            <button id="submitResponseButton">
+                Submit AI Response
+            </button>
+
+        </div>
+
+        <div class="section">
+
+            <h3>
+                Last Thoughts
+            </h3>
+
+            <div id="thoughtsBox"></div>
+
+        </div>
+
+    </div>
+
+    <div
+            class="panel"
+            id="centerPanel"
+    >
+
+        <h2>
+            Logs
+        </h2>
+
+        <div id="logsBox"></div>
+
+        <h2>
+            History
+        </h2>
+
+        <div id="historyBox"></div>
+
+    </div>
+
+    <div
+            class="panel"
+            id="rightPanel"
+    >
+
+        <h2>
+            Spectator State
+        </h2>
+
+        <pre id="stateBox"></pre>
+
+        <h2>
+            Last Results
+        </h2>
+
+        <pre id="resultsBox"></pre>
+
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
