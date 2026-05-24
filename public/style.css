@@ -1,0 +1,157 @@
+/* public/style.css */
+
+body {
+
+    margin: 0;
+
+    padding: 0;
+
+    background: #111827;
+
+    color: #f3f4f6;
+
+    font-family:
+            Arial,
+            sans-serif;
+}
+
+#topBar {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 15px;
+
+    background: #1f2937;
+
+    border-bottom:
+            1px solid #374151;
+}
+
+.topItem {
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.label {
+
+    font-size: 12px;
+
+    color: #9ca3af;
+}
+
+#mainLayout {
+
+    display: flex;
+
+    height:
+            calc(100vh - 70px);
+}
+
+.panel {
+
+    flex: 1;
+
+    padding: 15px;
+
+    overflow-y: auto;
+
+    border-right:
+            1px solid #374151;
+}
+
+#rightPanel {
+
+    border-right: none;
+}
+
+.section {
+
+    margin-bottom: 25px;
+}
+
+textarea {
+
+    width: 100%;
+
+    min-height: 220px;
+
+    resize: vertical;
+
+    background: #0f172a;
+
+    color: #f3f4f6;
+
+    border:
+            1px solid #374151;
+
+    padding: 10px;
+
+    box-sizing: border-box;
+}
+
+button {
+
+    margin-top: 10px;
+
+    padding:
+            10px 14px;
+
+    background: #2563eb;
+
+    color: white;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+button:hover {
+
+    background: #1d4ed8;
+}
+
+#logsBox,
+#historyBox,
+#thoughtsBox,
+#stateBox,
+#resultsBox {
+
+    background: #0f172a;
+
+    border:
+            1px solid #374151;
+
+    padding: 10px;
+
+    min-height: 220px;
+
+    overflow-x: auto;
+
+    white-space: pre-wrap;
+}
+
+.logEntry {
+
+    margin-bottom: 6px;
+
+    border-bottom:
+            1px solid #1f2937;
+
+    padding-bottom: 6px;
+}
+
+.historyEntry {
+
+    margin-bottom: 10px;
+
+    padding-bottom: 10px;
+
+    border-bottom:
+            1px solid #1f2937;
+}
